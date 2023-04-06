@@ -48,24 +48,6 @@
       "pl": '<span style="font-size:22pt">Witamy w symulacji promieni optycznych</span><br>Aby dodać komponent optyczny, zaznacz narzędzie i kliknij puste miejsce.<br>Aby załadować przykład, <a href="https://phydemo.app/ray-optics/gallery/">przejdź do strony Galerii</a>.<br><small>Polska wersja Galerii jest dostępna na <a href="https://edukator.pl/simulations/ray-optics/gallery_pl/index.html">edukator.pl</a></small>'
     }
     var lang = 'en';
-    if (navigator.language) {
-      var browser_lang = navigator.language.toLowerCase();
-      if (browser_lang == 'zh-tw' || browser_lang == 'zh-hk' || browser_lang.startsWith('zh-hant')) {
-        lang = 'zh-TW';
-      } else if (browser_lang == 'zh' || browser_lang.startsWith('zh-')) {
-        lang = 'zh-CN';
-      } else if (browser_lang == 'ru' || browser_lang.startsWith('ru-')) {
-        lang = 'ru';
-      } else if (browser_lang == 'nl' || browser_lang.startsWith('nl-')) {
-        lang = 'nl';
-      } else if (browser_lang == 'fr' || browser_lang.startsWith('fr-')) {
-        lang = 'fr';
-      } else if (browser_lang == 'de' || browser_lang.startsWith('de-')) {
-        lang = 'de';
-      } else if (browser_lang == 'pl' || browser_lang.startsWith('pl-')) {
-        lang = 'pl';
-      }
-    }
 
     var url_lang = location.search.substr(1)
     if (url_lang && welcome_msgs[url_lang]) {
